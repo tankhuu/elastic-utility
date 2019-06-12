@@ -1,0 +1,21 @@
+{
+  "index_patterns": ["nginx-access-*"],
+  "settings": {
+    "number_of_shards": 1
+  },
+  "mappings": {
+    "properties": {
+      "body_sent_bytes": {
+        "type": "long"
+      },
+      "time": {
+        "type": "date",
+        "format": "dd/MMM/yyyy:HH:mm:ss Z"
+      },
+      "logrotate_timestamp": {
+        "type": "date",
+        "format": "epoch_second"
+      }
+    }
+  }
+}
