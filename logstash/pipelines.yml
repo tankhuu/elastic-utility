@@ -1,0 +1,6 @@
+- pipeline.id: doctor
+  path.config: "/Users/tankhuu/GitHub/TanKhuu/elastic-utility/logstash/doctor.conf"
+  pipeline.workers: 3
+- pipeline.id: patient
+  path.config: "/Users/tankhuu/GitHub/TanKhuu/elastic-utility/logstash/patient.conf"
+  queue.type: persisted
